@@ -1,4 +1,4 @@
-package com.codingtest.similar_products.domain.exception;
+package com.backendtest.similar_products.domain.exception;
 
 /**
  * Excepción que representa fallos genéricos al comunicarse con

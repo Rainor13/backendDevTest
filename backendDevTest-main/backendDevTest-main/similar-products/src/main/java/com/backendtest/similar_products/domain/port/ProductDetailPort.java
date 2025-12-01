@@ -1,6 +1,7 @@
-package com.codingtest.similar_products.domain.port;
+package com.backendtest.similar_products.domain.port;
 
-import com.codingtest.similar_products.domain.model.Product;
+
+import com.backendtest.similar_products.domain.model.Product;
 
 /**
  * Puerto de salida responsable de recuperar el detalle de un
