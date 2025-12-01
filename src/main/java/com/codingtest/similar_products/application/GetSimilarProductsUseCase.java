@@ -3,6 +3,7 @@ package com.codingtest.similar_products.application;
 import com.codingtest.similar_products.domain.model.Product;
 import com.codingtest.similar_products.domain.port.ProductDetailPort;
 import com.codingtest.similar_products.domain.port.SimilarProductIdsPort;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Objects;
@@ -11,6 +12,7 @@ import java.util.Objects;
  * Caso de uso encargado de recuperar los detalles de los
  * productos similares a uno dado.
  */
+@Service
 public class GetSimilarProductsUseCase {
 
     private final SimilarProductIdsPort similarProductIdsPort;
