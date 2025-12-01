@@ -1,4 +1,4 @@
-package com.codingtest.similar_products.domain.port;
+package com.backendtest.similar_products.domain.port;
 
 import java.util.List;
 

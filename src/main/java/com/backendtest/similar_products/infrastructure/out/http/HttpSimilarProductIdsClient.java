@@ -1,8 +1,8 @@
-package com.codingtest.similar_products.infrastructure.out.http;
+package com.backendtest.similar_products.infrastructure.out.http;
 
-import com.codingtest.similar_products.domain.exception.ExternalServiceException;
-import com.codingtest.similar_products.domain.exception.ProductNotFoundException;
-import com.codingtest.similar_products.domain.port.SimilarProductIdsPort;
+import com.backendtest.similar_products.domain.exception.ExternalServiceException;
+import com.backendtest.similar_products.domain.exception.ProductNotFoundException;
+import com.backendtest.similar_products.domain.port.SimilarProductIdsPort;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;

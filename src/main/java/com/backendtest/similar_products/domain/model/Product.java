@@ -1,4 +1,4 @@
-package com.codingtest.similar_products.domain.model;
+package com.backendtest.similar_products.domain.model;
 
 import java.math.BigDecimal;
 import java.util.Objects;

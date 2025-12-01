@@ -1,4 +1,4 @@
-package com.codingtest.similar_products.infrastructure.out.http;
+package com.backendtest.similar_products.infrastructure.out.http;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;

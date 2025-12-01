@@ -1,6 +1,6 @@
-package com.codingtest.similar_products.infrastructure.out.http.dto;
+package com.backendtest.similar_products.infrastructure.out.http.dto;
 
-import com.codingtest.similar_products.domain.model.Product;
+import com.backendtest.similar_products.domain.model.Product;
 
 import java.math.BigDecimal;
 

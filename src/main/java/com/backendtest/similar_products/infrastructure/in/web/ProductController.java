@@ -1,7 +1,7 @@
-package com.codingtest.similar_products.infrastructure.in.web;
+package com.backendtest.similar_products.infrastructure.in.web;
 
-import com.codingtest.similar_products.application.GetSimilarProductsUseCase;
-import com.codingtest.similar_products.infrastructure.in.web.dto.ProductDto;
+import com.backendtest.similar_products.application.GetSimilarProductsUseCase;
+import com.backendtest.similar_products.infrastructure.in.web.dto.ProductDto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

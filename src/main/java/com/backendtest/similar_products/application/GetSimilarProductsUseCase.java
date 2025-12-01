@@ -1,8 +1,8 @@
-package com.codingtest.similar_products.application;
+package com.backendtest.similar_products.application;
 
-import com.codingtest.similar_products.domain.model.Product;
-import com.codingtest.similar_products.domain.port.ProductDetailPort;
-import com.codingtest.similar_products.domain.port.SimilarProductIdsPort;
+import com.backendtest.similar_products.domain.model.Product;
+import com.backendtest.similar_products.domain.port.ProductDetailPort;
+import com.backendtest.similar_products.domain.port.SimilarProductIdsPort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

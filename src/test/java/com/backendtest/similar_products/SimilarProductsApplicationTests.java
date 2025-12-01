@@ -1,4 +1,4 @@
-package com.codingtest.similar_products;
+package com.backendtest.similar_products;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

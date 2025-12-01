@@ -1,7 +1,7 @@
-package com.codingtest.similar_products.infrastructure.in.web;
+package com.backendtest.similar_products.infrastructure.in.web;
 
-import com.codingtest.similar_products.domain.exception.ExternalServiceException;
-import com.codingtest.similar_products.domain.exception.ProductNotFoundException;
+import com.backendtest.similar_products.domain.exception.ExternalServiceException;
+import com.backendtest.similar_products.domain.exception.ProductNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

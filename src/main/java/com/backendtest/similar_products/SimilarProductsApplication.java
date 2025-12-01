@@ -1,4 +1,4 @@
-package com.codingtest.similar_products;
+package com.backendtest.similar_products;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
