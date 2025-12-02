@@ -48,7 +48,7 @@ public class HttpSimilarProductIdsClient implements SimilarProductIdsPort {
                 log.warn("Similar ids not found for {}", productId);
                 throw new ProductNotFoundException(productId, ex);
             }
-            log.error("External product service returned {} while fetching similar ids for {}", ex.getRawStatusCode(), productId, ex);
+            log.error("External product service returned {} while fetching similar ids for {}", ex.getStatusCode().value(), productId, ex);
             throw new ExternalServiceException("Error retrieving similar ids for product " + productId, ex);
         } catch (RestClientException ex) {
             log.error("External product service error fetching similar ids for {}", productId, ex);

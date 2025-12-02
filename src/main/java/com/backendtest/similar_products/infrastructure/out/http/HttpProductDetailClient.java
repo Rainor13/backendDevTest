@@ -48,7 +48,7 @@ public class HttpProductDetailClient implements ProductDetailPort {
                 log.warn("Product {} not found in external service", productId);
                 throw new ProductNotFoundException(productId, ex);
             }
-            log.error("External product service returned {} for id {}", ex.getRawStatusCode(), productId, ex);
+            log.error("External product service returned {} for id {}", ex.getStatusCode().value(), productId, ex);
             throw new ExternalServiceException("Error retrieving product " + productId, ex);
         } catch (RestClientException ex) {
             log.error("External product service error retrieving id {}", productId, ex);
