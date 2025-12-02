@@ -1,0 +1,133 @@
+PS G:\Prueba tecnica\backendDevTest-main\backendDevTest-main> docker-compose run --rm k6 run scripts/test.js
+
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: scripts/test.js
+     output: influxdb=http://influxdb:8086/k6 (http://influxdb:8086)
+
+  scenarios: (100.00%) 5 scenarios, 200 max VUs, 1m30s max duration (incl. graceful stop):
+           * normal: 200 looping VUs for 10s (exec: normal)
+           * notFound: 200 looping VUs for 10s (exec: notFound, startTime: 10s)
+           * error: 200 looping VUs for 10s (exec: error, startTime: 20s)
+           * slow: 200 looping VUs for 10s (exec: slow, startTime: 30s, gracefulStop: 10s)
+           * verySlow: 200 looping VUs for 10s (exec: verySlow, startTime: 50s, gracefulStop: 30s)
+
+ERRO[0009] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0009] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0009] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0009] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0013] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0013] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0013] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0013] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0017] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0017] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0017] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0017] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0021] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0021] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0021] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0021] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0025] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0025] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0025] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0025] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0029] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0029] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0029] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0029] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0033] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0033] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0033] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0033] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0037] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0037] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0037] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0037] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0041] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0041] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0041] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0041] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0045] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0045] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0045] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0045] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0049] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0049] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0049] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0049] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0053] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0053] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0053] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0053] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0057] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0057] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0057] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0057] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0061] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0061] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0061] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0061] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0065] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0065] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0065] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0065] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0069] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0069] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0069] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0069] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0073] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0073] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0073] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0073] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0077] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0077] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0077] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0077] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0081] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0081] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0081] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0081] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0085] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0085] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0085] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0085] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0089] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0089] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0089] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0089] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0093] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0093] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0093] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0093] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+
+running (1m30.1s), 000/200 VUs, 6569 complete and 800 interrupted iterations
+normal   ✓ [======================================] 200 VUs  10s
+notFound ✓ [======================================] 200 VUs  10s
+error    ✓ [======================================] 200 VUs  10s
+slow     ✓ [======================================] 200 VUs  10s
+verySlow ✓ [======================================] 200 VUs  10s
+
+    data_received..............: 1.8 MB 20 kB/s
+    data_sent..................: 796 kB 8.8 kB/s
+    http_req_blocked...........: avg=6.51ms   min=1.9µs    med=7µs      max=313.05ms p(90)=17.23µs  p(95)=43.58ms
+    http_req_connecting........: avg=5.22ms   min=0s       med=0s       max=236.91ms p(90)=0s       p(95)=42.88ms
+    http_req_duration..........: avg=774.6ms  min=15.04ms  med=410.32ms max=6.92s    p(90)=940.9ms  p(95)=6.17s
+    http_req_receiving.........: avg=362.17µs min=25.3µs   med=255.91µs max=8.65ms   p(90)=674.32µs p(95)=997.28µs
+    http_req_sending...........: avg=45.02µs  min=6.7µs    med=24.9µs   max=23.63ms  p(90)=57.93µs  p(95)=78.7µs
+    http_req_tls_handshaking...: avg=0s       min=0s       med=0s       max=0s       p(90)=0s       p(95)=0s
+    http_req_waiting...........: avg=774.19ms min=14.01ms  med=409.88ms max=6.92s    p(90)=940.35ms p(95)=6.17s
+    http_reqs..................: 6888   76.481055/s
+    iteration_duration.........: avg=1.3s     min=515.35ms med=910.93ms max=7.48s    p(90)=1.54s    p(95)=6.73s
+    iterations.................: 6570   72.950135/s
+    vus........................: 200    min=0   max=200
+    vus_max....................: 200    min=200 max=200
+
+ERRO[0097] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0097] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"
+ERRO[0097] InfluxDB: Couldn't write stats                error="Post \"http://influxdb:8086/write?consistency=&db=k6&precision=ns&rp=\": dial tcp: lookup influxdb on 127.0.0.11:53: no such host"

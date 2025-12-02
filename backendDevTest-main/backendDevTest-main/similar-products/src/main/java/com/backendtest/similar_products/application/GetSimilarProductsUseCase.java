@@ -1,4 +1,4 @@
-package com.backendtest.similar_products;
+package com.backendtest.similar_products.application;
 
 import com.backendtest.similar_products.domain.model.Product;
 import com.backendtest.similar_products.domain.port.ProductDetailPort;

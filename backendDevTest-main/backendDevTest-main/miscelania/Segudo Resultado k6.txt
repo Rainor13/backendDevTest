@@ -1,0 +1,39 @@
+          /\      |‾‾| /‾‾/   /‾‾/
+     /\  /  \     |  |/  /   /  /
+    /  \/    \    |     (   /   ‾‾\
+   /          \   |  |\  \ |  (‾)  |
+  / __________ \  |__| \__\ \_____/ .io
+
+  execution: local
+     script: scripts/test.js
+     output: influxdb=http://influxdb:8086/k6 (http://influxdb:8086)
+
+  scenarios: (100.00%) 5 scenarios, 200 max VUs, 1m30s max duration (incl. graceful stop):
+           * normal: 200 looping VUs for 10s (exec: normal)
+           * notFound: 200 looping VUs for 10s (exec: notFound, startTime: 10s)
+           * error: 200 looping VUs for 10s (exec: error, startTime: 20s)
+           * slow: 200 looping VUs for 10s (exec: slow, startTime: 30s, gracefulStop: 10s)
+           * verySlow: 200 looping VUs for 10s (exec: verySlow, startTime: 50s, gracefulStop: 30s)
+
+
+running (1m03.1s), 000/200 VUs, 3849 complete and 600 interrupted iterations
+normal   ✓ [======================================] 200 VUs  10s
+notFound ✓ [======================================] 200 VUs  10s
+error    ✓ [======================================] 200 VUs  10s
+slow     ✓ [======================================] 200 VUs  10s
+verySlow ✓ [======================================] 200 VUs  10s
+
+    data_received..............: 1.0 MB 16 kB/s
+    data_sent..................: 480 kB 7.6 kB/s
+    http_req_blocked...........: avg=29.44ms min=1.2µs    med=5µs     max=587.19ms p(90)=62.98ms  p(95)=290.57ms
+    http_req_connecting........: avg=26.28ms min=0s       med=0s      max=587.15ms p(90)=58.11ms  p(95)=193.33ms
+    http_req_duration..........: avg=1.94s   min=11.86ms  med=1.94s   max=4.11s    p(90)=2.95s    p(95)=3.66s
+    http_req_receiving.........: avg=95.86ms min=16µs     med=51.97ms max=510.45ms p(90)=264.04ms p(95)=321.79ms
+    http_req_sending...........: avg=67.42µs min=4.9µs    med=18.3µs  max=24.57ms  p(90)=73.1µs   p(95)=124.9µs
+    http_req_tls_handshaking...: avg=0s      min=0s       med=0s      max=0s       p(90)=0s       p(95)=0s
+    http_req_waiting...........: avg=1.84s   min=11.41ms  med=1.75s   max=3.93s    p(90)=2.81s    p(95)=3.58s
+    http_reqs..................: 4063   64.417626/s
+    iteration_duration.........: avg=2.51s   min=512.18ms med=2.5s    max=4.7s     p(90)=3.45s    p(95)=4.21s
+    iterations.................: 3849   61.024722/s
+    vus........................: 14     min=0   max=200
+    vus_max....................: 200    min=200 max=200
